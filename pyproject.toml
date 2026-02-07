@@ -26,3 +26,4 @@ build-backend = "uv_build"
 
 [tool.uv_build]
 version-source = "vcs"
+fallback-version = "0.0.0"
