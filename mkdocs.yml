@@ -1,0 +1,36 @@
+site_name: package-docs Documentation
+theme:
+  name: material
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            docstring_style: google 
+            show_root_heading: true
+            show_source: true  # 소스 코드 보기 버튼
+
+nav:
+  - Home: index.md
+  - API Reference:
+    - Overview: api/overview.md
+    - dataio: api/dataio/overview.md
+    - analyzer:
+      - Overview: api/analyzer/overview.md
+      - Alpha:
+        - Overview: api/analyzer/Alpha/overview.md
+        - Alpha.analysis: api/analyzer/Alpha/analysis.md
+        - Alpha.query: api/analyzer/Alpha/query.md
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - admonition  #  팁, 경고, 노트 등 강조 박스 생성
+  # - footnotes  # 문서 하단에 각주 추가. 
+  # - codehilite:  #  코드 블록에 하이라이팅 및 라인 번호 추가 (Pygments 기반)
+  #     guess_lang: false
+  #     linenums: true
+  # - toc:  #  문서 내 헤더(#)를 기반으로 목차 자동 생성.
+  #     permalink: true
