@@ -1,6 +1,6 @@
 [project]
 name = "package-docs"
-version = "0.1.0"
+dynamic = ["version"]
 description = "Add your description here"
 readme = "README.md"
 authors = [
@@ -12,10 +12,6 @@ dependencies = [
     "pandas>=3.0.0",
 ]
 
-[build-system]
-requires = ["uv_build>=0.9.17,<0.10.0"]
-build-backend = "uv_build"
-
 [dependency-groups]
 dev = [
     "ipykernel>=7.2.0",
@@ -23,3 +19,11 @@ dev = [
     "mkdocstrings[python]>=1.0.2",
     "ruff>=0.15.0",
 ]
+
+[build-system]
+requires = ["uv_build>=0.10.0,<0.11.0"]
+build-backend = "uv_build"
+
+[tool.uv-build]
+# Git 태그를 버전으로 사용하도록 설정
+version-source = "vcs"
