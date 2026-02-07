@@ -39,11 +39,10 @@ jobs:
       #   run: uv publish
 
       - name: Deploy Docs
-        run: uv run mkdocs gh-deploy --force
-        # run: |
-        #   git config --global user.name "github-actions[bot]"
-        #   git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        #   uv run mkdocs gh-deploy --force
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          uv run mkdocs gh-deploy --force
 
     # ===========================================
     # [2] Self-hosted 환경에서 실행 (Windows)
