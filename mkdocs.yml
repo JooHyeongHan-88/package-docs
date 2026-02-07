@@ -1,4 +1,7 @@
-site_name: package-docs Documentation
+site_name: package-docs 패키지 매뉴얼
+
+site_url: https://joohyeonghan-88.github.io/package-docs/site/
+
 theme:
   name: material
 
@@ -10,6 +13,7 @@ plugins:
           options:
             docstring_style: google 
             show_root_heading: true  # 루트 모듈 헤딩 표시
+            show_symbol_type_heading: true  # 심볼 타입별 헤딩 표시
             show_source: false  # 소스 코드 보기
 
 nav:
