@@ -28,6 +28,9 @@ nav:
         - Alpha.analysis: api/analyzer/Alpha/analysis.md
         - Alpha.query: api/analyzer/Alpha/query.md
 
+extra:
+  copyright: Copyright © 2026 Joohyeong Han
+
 markdown_extensions:
   - pymdownx.highlight
   - pymdownx.superfences
