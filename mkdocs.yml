@@ -1,5 +1,7 @@
 site_name: package-docs 패키지 매뉴얼
 
+copyright: Copyright © 2026 Joohyeong Han
+
 site_url: https://joohyeonghan-88.github.io/package-docs/
 
 theme:
@@ -27,9 +29,6 @@ nav:
         - Overview: api/analyzer/Alpha/overview.md
         - Alpha.analysis: api/analyzer/Alpha/analysis.md
         - Alpha.query: api/analyzer/Alpha/query.md
-
-extra:
-  copyright: Copyright © 2026 Joohyeong Han
 
 markdown_extensions:
   - pymdownx.highlight
