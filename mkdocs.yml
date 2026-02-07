@@ -1,6 +1,6 @@
 site_name: package-docs 패키지 매뉴얼
 
-site_url: https://joohyeonghan-88.github.io/package-docs/site/
+site_url: https://joohyeonghan-88.github.io/package-docs/
 
 theme:
   name: material

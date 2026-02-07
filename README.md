@@ -19,3 +19,8 @@ uv run mkdocs serve
 ```bash
 uv run mkdocs build
 ```
+
+## mkdocs 문서 github pages로 배포
+```bash
+uv run mkdocs gh-deploy
+```
