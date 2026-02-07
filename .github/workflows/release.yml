@@ -11,6 +11,11 @@ jobs:
     # ===========================================
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write  # gh-pages 브랜치에 푸시하기 위해 필수
+      pages: write     # GitHub Pages 설정을 위해 권한 부여
+      id-token: write
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -44,6 +49,11 @@ jobs:
     # [2] Self-hosted 환경에서 실행 (Windows)
     # ===========================================
     # runs-on: [self-hosted, windows]
+
+    # permissions:
+    #   contents: write  # gh-pages 브랜치에 푸시하기 위해 필수
+    #   pages: write     # GitHub Pages 설정을 위해 권한 부여
+    #   id-token: write
 
     # steps:
     #   - name: Checkout code
