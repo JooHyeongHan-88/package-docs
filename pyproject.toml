@@ -20,10 +20,20 @@ dev = [
     "ruff>=0.15.0",
 ]
 
-[build-system]
-requires = ["uv_build>=0.10.0,<0.11.0"]
-build-backend = "uv_build"
+# [build-system]
+# requires = ["uv_build>=0.10.0,<0.11.0"]
+# build-backend = "uv_build"
 
-[tool.uv_build]
-version-source = "vcs"
-fallback-version = "0.0.0"
+# [tool.uv_build]
+# version-source = "vcs"
+# fallback-version = "0.0.0"
+
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/package_docs"]
