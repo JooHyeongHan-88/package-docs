@@ -24,6 +24,5 @@ dev = [
 requires = ["uv_build>=0.10.0,<0.11.0"]
 build-backend = "uv_build"
 
-[tool.uv_build]
-# Git 태그를 버전으로 사용하도록 설정
+[tool.uv.build]
 version-source = "vcs"
