@@ -17,4 +17,4 @@ def bigdataquery(val: int) -> pd.DataFrame:
         df = bigdataquery(10)
         ```
     """
-    return pd.DataFrame({'value': [val]})
+    return pd.DataFrame({"value": [val]})

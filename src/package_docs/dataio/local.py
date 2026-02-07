@@ -22,7 +22,7 @@ def load() -> int:
         함수 직접 부르기:
         ```python
         from package_docs.dataio.local import load
-        
+
         num = load()
         ```
     """

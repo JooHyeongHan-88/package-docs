@@ -1,7 +1,6 @@
 __pycache__/
 .venv/
 dist/
-site/
 uv.lock
 .python-version
 *.pyc

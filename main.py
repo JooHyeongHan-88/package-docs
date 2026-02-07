@@ -8,7 +8,7 @@ def main():
     # logger
     logger = pack.get_logger("test_logger")
     logger.info("Logger is working!")
-    
+
     # bucket
     bucket = pack.Bucket(
         name="my-bucket",
@@ -16,7 +16,7 @@ def main():
         creation_date="2024-01-01",
     )
     logger.info(bucket.get_info())
-    
+
     # ====================================
     # dataio
     # ====================================
@@ -52,7 +52,7 @@ def main():
     logger.info(f"Measurement DataFrame shape: {measure.shape}")
 
     # analysis
-    correlation  = alpha.analysis.analyze_correlation(
+    correlation = alpha.analysis.analyze_correlation(
         data=chip,
         method="pearson",
         threshold=0.5,

@@ -9,8 +9,8 @@ plugins:
         python:
           options:
             docstring_style: google 
-            show_root_heading: true
-            show_source: true  # 소스 코드 보기 버튼
+            show_root_heading: true  # 루트 모듈 헤딩 표시
+            show_source: false  # 소스 코드 보기
 
 nav:
   - Home: index.md

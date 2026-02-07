@@ -16,11 +16,13 @@ def get_logger(name: str) -> Logger:
     """
     if not isinstance(name, str):
         raise TypeError("name은 반드시 문자열이어야 합니다.")
-    
+
     logger = logging.getLogger(name)
     if not logger.hasHandlers():
         handler = logging.StreamHandler()
-        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+        formatter = logging.Formatter(
+            "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+        )
         handler.setFormatter(formatter)
         logger.addHandler(handler)
         logger.setLevel(logging.INFO)
