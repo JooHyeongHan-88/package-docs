@@ -1,7 +1,7 @@
 [project]
 name = "package-docs"
 dynamic = ["version"]
-description = "Add your description here"
+description = "패키지 빌드 및 문서 작성에 대한 github action 워크플로우 예제"
 readme = "README.md"
 authors = [
     { name = "hanjoo", email = "hanjoo8821@postech.ac.kr" }
