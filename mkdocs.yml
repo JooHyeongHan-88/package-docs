@@ -7,6 +7,9 @@ site_url: https://joohyeonghan-88.github.io/package-docs/
 theme:
   name: material
 
+extra:
+  generator: false
+
 plugins:
   - search
   - mkdocstrings:
